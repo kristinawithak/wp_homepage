@@ -5,20 +5,23 @@ html, body {
 }
 
 h2{
-  margin-top: 100px;
+  margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
 }
 
 .container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    mar
     margin-right: auto;
     margin-left: auto;
 }
-.new-container {
+.bottom_container {
   width: 100%;
-    background-color: grey;
+	height:auto;
+	padding: 20px 15px 10px 15px;
+	background-color: #F6F6F6;
 }
 .row {
 	display:inherit;
@@ -177,15 +180,15 @@ img#icon {
   border-radius: 5px;
 }
 .column-section {
-  margin:2em 0 0 0;
+	text-align: center;
+  margin:50px 0 50px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 200px;
   grid-gap:10px;
   border: none;
-  border-radius: 5px;
-  hover:none;
 }
+
 #icon {
   max-width: 100px;
 }
@@ -202,14 +205,27 @@ img#icon {
 a:-webkit-any-link {
 }
 
-
-.footer_container {
-  display: inherit;
-  background-color: #222;
-  height: 200px;
+.footer {
+  width: 100%;
+  display: -webkit-box;
+  background-color: black;
 }
-a.footer_link {
+
+.footer-left{
+  display: flex;
+  flex-direction: row;
+}
+.footer_link {
   color: #ffffff;
+  display: flex;
+}
+
+svg {
+  color: #fff;
+}
+
+.button {
+	display:
 }
 
 @media only screen and (max-width:568px){
