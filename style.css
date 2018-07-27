@@ -207,7 +207,7 @@ a:-webkit-any-link {
 
 .footer {
   width: 100%;
-  display: -webkit-box;
+  display: grid;
   background-color: black;
 }
 
@@ -215,7 +215,19 @@ a:-webkit-any-link {
   display: flex;
   flex-direction: row;
 }
+div.social {
+	display: flex;
+	flex-direction: row;
+}
 .footer_link {
+  color: #ffffff;
+  display: flex;
+}
+
+svg.footer_social-icon.footer_twitter-icon{
+	color: #ffffff;
+}
+svg.footer-social-link {
   color: #ffffff;
   display: flex;
 }
@@ -227,6 +239,11 @@ svg {
 .button {
 	display:
 }
+button.view-all-button{
+	margin-bottom: 50px;
+}
+
+
 
 @media only screen and (max-width:568px){
 	.categories {
