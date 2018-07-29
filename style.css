@@ -267,6 +267,13 @@ div.copyright {
 		font-size: 22px;
 		font-weight: 400;
 	}
+	.categories {
+		margin: 5em;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 150px 150px 150px;
+		grid-gap:10px;
+	}
 }
 @media only screen and (max-width:568px){
 	.categories {
