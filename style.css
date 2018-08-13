@@ -74,7 +74,7 @@ ul.navbar-nav {
 }
 
 .jumbotron {
-	background-image: url("images/wheelprice1_heroBG.jpg");
+	background-image: url("wheelprice1_heroBG.jpg");
 	box-shadow: inset 0 0 0 999999px rgba(0,0,0,0.5);
 	background-size: cover;
 	min-height: 80vh;
