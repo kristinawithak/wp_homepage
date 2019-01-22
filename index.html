@@ -1,39 +1,38 @@
-
     <!DOCTYPE html>
     <html lang="en">
     <head>
+      <link rel="icon" type="image/png" href="favicon-01.png"/>
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
       <title>WheelPrice - Largest online selection of wheels for sale</title>
       <meta name="description" content="500+ new and used wheels for sale">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-      <link href="style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+      <link href="css/style.css" rel="stylesheet">
         </head>
         <body>
 
-    </head>
 <!-- Navigation -->
 <nav class="navbar">
 	<span class="open-slide">
 	<a href="#" onclick="openSlideMenu()">
 		<label for="toggle">&#9776;</label>
 		</a></span>
-	<a class="brand-logo" href="#"><img src="logo.png"></img></a>
+	<a class="brand-logo" href="#"><img src="images/WP_Logo.png"></a>
 	<ul class="navbar-nav">
-		<li><a href="https://www.wheelprice.com/en/infos/about">About</a></li>
-		<li><a href="https://www.wheelprice.com/s?category=wheels">Wheels for sale</a></li>
-		<li><a href="https://www.wheelprice.com/en/infos/how_to_use">How it works</a></li>
-		<li><a href="https://www.wheelprice.com/en/user_feedbacks/new">Contact us</a></li>
-		<li><a href="https://www.wheelprice.com/en/login">Invite new members</a></li>
+		<li class="nav-li"><a href="https://www.wheelprice.com/en/infos/about">About</a></li>
+		<li class="nav-li"><a href="https://www.wheelprice.com/s?category=wheels">All wheels for sale</a></li>
+		<li class="nav-li"><a href="https://www.wheelprice.com/en/infos/how_to_use">How it works</a></li>
+		<li class="nav-li"><a href="https://www.wheelprice.com/en/user_feedbacks/new">Contact us</a></li>
+		<li class="nav-li"><a href="https://www.wheelprice.com/en/login">Invite new members</a></li>
   </ul>
 	<div class="menu-right">
 		<span class="menu-right-hide">
-			<a href="https://www.wheelprice.com/en/signup">Sign up</a>
-			<a href="https://www.wheelprice.com/en/login">Login</a>
+			<a class="login-links" href="https://www.wheelprice.com/en/signup">Sign up</a>
+			<a class="login-links" href="https://www.wheelprice.com/en/login">Login</a>
 		</span>
-		<button type="button" class="menu-button">+Sell your wheels</button>
+		<a class="signup-button" href="https://www.wheelprice.com/en/login"> + Sell your wheels</a>
 	</div>
 </nav>
 
@@ -47,73 +46,40 @@
 	<a href="https://www.wheelprice.com/en/user_feedbacks/new">Contact us</a>
 	<a href="https://www.wheelprice.com/en/login">Invite new members</a>
 	</div>
-<script>
-	function openSlideMenu(){
-		document.getElementById('side-menu').style.width= '300px';
-	}
-		function closeSlideMenu(){
-		document.getElementById('side-menu').style.width= '0';
-	}
-	</script>
 
-
-
-
-<!--- Image Slider -->
-
+  <script>
+  	function openSlideMenu(){
+  		document.getElementById('side-menu').style.width= '300px';
+  	}
+  		function closeSlideMenu(){
+  		document.getElementById('side-menu').style.width= '0';
+  	}
+  	</script>
 
 <!--- Jumbotron -->
 <section>
-	<div class="jumbotron text-center mt-2">
+	<div class="jumbotron">
 		<div class="container">
 			<div class="row">
 		<div class="hero__content">
-<div class="hero__content-container">
-	<h1 class="hero__title">Largest online selection of wheels for sale</h1>
-	<h3 class="hero__subtitle">500+ new and used wheels <span style="white-space: nowrap">for sale</span>
-</h3>
-</div>
-</div>
-<div class="hero-search-bar">
-          <form method="get" id="hero-search-form" action="/s">
-            <div class="search-input-container">
-              <div class="search-icon">
-  <div class="w3-padding w3-xlarge w3-teal">
-    <i class="glyphicon glyphicon-search"></i>
-  </div>
-                <input type="search" name="q" class="search-input" placeholder="Search">
-                <input type="search" name="lq" class="location-input" placeholder="Location" autocomplete="off">
-            <button type="submit" class="search-button">Search</button>
-              <input type="hidden" name="ls">
-              <input type="hidden" name="lc">
-              <input type="hidden" name="boundingbox">
-              <input type="hidden" name="distance_max">
-            </div>
-
-          </form>
-        </div>
+      <div class="hero__content-container">
+	       <h1 class="hero__title">Largest online selection of wheels for sale</h1>
+	        <h3 class="hero__subtitle">500+ new and used wheels <span style="white-space: nowrap">for sale</span>
+          </h3>
       </div>
-
-
-</div>
-</div>
-			</div>
-		</div>
-	</div>
+    </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!--- Welcome Section -->
 
-
-
-<!--- Two Column Section -->
-
-
+<!--- Categories Section -->
 <section>
 		 <div class="container">
 			 <div class="row">
 				 <div class="col-12 text-center">
-					 <h1>Browse by Diameter</h1>
+					 <h1 class="h1-title">Browse by Diameter</h1>
 				 </div>
 			 </div>
 		 </div>
@@ -121,43 +87,52 @@
 
 <!--- Category Grid -->
 <section>
+  <div class="categories_section">
 <div class="categories">
-  <div class="box box1"><a href="https://www.wheelprice.com/s?q=&lq=&ls=&lc=&boundingbox=&distance_max=&view=grid&price_min=0&price_max=10000&filter_option_220002=220002"><img src="cat_img_15in.png" alt="15in"></a></div>
-  <div class="box box2"><a href="https://www.wheelprice.com/s?q=&lq=&ls=&lc=&boundingbox=&distance_max=&view=grid&price_min=0&price_max=10000&filter_option_220003=220003"><img src="cat_img_16in.png" alt="16in"></a></div>
-  <div class="box box3"><a href="https://www.wheelprice.com/s?q=&lq=&ls=&lc=&boundingbox=&distance_max=&view=grid&price_min=0&price_max=10000&filter_option_220004=220004"><img src="cat_img_17in.png" alt="17in"></a></div>
-  <div class="box box4"><a href="https://www.wheelprice.com/s?q=&lq=&ls=&lc=&boundingbox=&distance_max=&view=grid&price_min=0&price_max=10000&filter_option_220005=220005"><img src="cat_img_15in.png" alt="18in"></a></div>
-  <div class="box box5"><a href="https://www.wheelprice.com/s?q=&lq=&ls=&lc=&boundingbox=&distance_max=&view=grid&price_min=0&price_max=10000&filter_option_220006=220006"><img src="cat_img_16in.png" alt="19n"></a></div>
-  <div class="box box6"><a href="https://www.wheelprice.com/s?q=&lq=&ls=&lc=&boundingbox=&distance_max=&view=grid&price_min=0&price_max=10000&filter_option_220007=220007"><img src="cat_img_17in.png" alt="20in"></a></div>
+  <div class="box"><a href="https://www.wheelprice.com/s?q=&lq=&ls=&lc=&boundingbox=&distance_max=&view=grid&price_min=0&price_max=10000&filter_option_220002=220002"><img class="image" src="images/cat1-15in_wheels.jpg" alt="15in"></a></div>
+  <div class="box"><a href="https://www.wheelprice.com/s?q=&lq=&ls=&lc=&boundingbox=&distance_max=&view=grid&price_min=0&price_max=10000&filter_option_220003=220003"><img class="image" src="images/cat2-16in_wheels.jpg" alt="16in"></a></div>
+  <div class="box"><a href="https://www.wheelprice.com/s?q=&lq=&ls=&lc=&boundingbox=&distance_max=&view=grid&price_min=0&price_max=10000&filter_option_220004=220004"><img class="image" src="images/cat3-17in_wheels.jpg" alt="17in"></a></div>
+  <div class="box"><a href="https://www.wheelprice.com/s?q=&lq=&ls=&lc=&boundingbox=&distance_max=&view=grid&price_min=0&price_max=10000&filter_option_220005=220005"><img class="image" src="images/cat4-18in_wheels.jpg" alt="18in"></a></div>
+  <div class="box"><a href="https://www.wheelprice.com/s?q=&lq=&ls=&lc=&boundingbox=&distance_max=&view=grid&price_min=0&price_max=10000&filter_option_220006=220006"><img class="image" src="images/cat5-19in_wheels.jpg" alt="19in"></a></div>
+  <div class="box"><a href="https://www.wheelprice.com/s?q=&lq=&ls=&lc=&boundingbox=&distance_max=&view=grid&price_min=0&price_max=10000&filter_option_220007=220007"><img class="image" src="images/cat6-20in_wheels.jpg" alt="20in"></a></div>
+</div>
 </div>
 </section>
 
 
 
+<!--- All Listings -->
 
 <section>
   <div class="container">
     <div class="col-12 text-center">
-           <button type="button" class="view-all-button">All Listings</button>
+           <button type="button" class="view-all-button"><a class="viewall-button" href="https://www.wheelprice.com/s">All Listings</a></button>
 		 </div>
    </div>
 	 </section>
 
 <section>
 <div class="bottom_container">
-  <h2> What is WheelPrice?</h2>
+  <h2 class="h2-title"> What is WheelPrice?</h2>
   <div class="column-section">
     <div class="col-1">
-      <img src="community.png" id="icon" alt="community"></img>
+      <i class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 66 82.5" enable-background="new 0 0 66 66" xml:space="preserve"><g><g><path d="M7.7,33.1c0-3.5,2.8-6.3,6.3-6.3s6.4,2.8,6.4,6.3s-2.9,6.3-6.4,6.3S7.7,36.6,7.7,33.1z"/></g><g><path d="M21.6,40.7c-6.3,2.7-9.9,8.6-10,14.5v0.1H1.8C1.4,55.3,1,55,1,54.6v-5c0-5.4,4.4-9.8,9.8-9.8c0.3,0,0.6,0.2,0.7,0.4    l2.5,4.9l2.5-4.9C17.1,39.1,20.4,40.2,21.6,40.7z"/></g><g><path d="M45.6,33.1c0-3.5,2.8-6.3,6.3-6.3s6.4,2.8,6.4,6.3s-2.9,6.3-6.4,6.3S45.6,36.6,45.6,33.1z"/></g><g><path d="M65,49.6v5c0,0.4-0.3,0.8-0.8,0.8h-9.9c0-0.1,0.2-9.8-9.3-14.3c-0.2-0.1-0.5-0.2-0.7-0.3c1.3-0.7,2.8-1,4.3-1    c0.3,0,0.6,0.2,0.7,0.4l2.5,4.9l2.5-4.9c0.1-0.3,0.4-0.4,0.7-0.4C60.6,39.8,65,44.2,65,49.6z"/></g><g><path d="M52.9,63.6c0,0.4-0.3,0.7-0.8,0.7H13.9c-0.4,0-0.8-0.3-0.8-0.7v-7.8c0-0.2,0-0.3,0-0.5C13.3,47.7,19.7,41,28,41    c0.3,0,0.6,0.2,0.8,0.4l4.3,8.4l4.3-8.4c0.1-0.3,0.4-0.4,0.7-0.4h0.1c8.2,0,14.7,6.7,14.8,14.4C52.9,55.6,52.9,56.1,52.9,63.6z"/></g><g><path d="M23.5,30.2c0-5.2,4.2-9.5,9.5-9.5c5.2,0,9.5,4.2,9.5,9.5c0,5.2-4.2,9.5-9.5,9.5C27.8,39.6,23.5,35.4,23.5,30.2z"/></g><g><path d="M62.4,1.7H41.2c-1.4,0-2.5,1.1-2.5,2.5v10.2c0,1.4,1.1,2.5,2.5,2.5h2.3v4.5c0,0.7,0.8,1,1.3,0.5l5-5h12.7    c1.4,0,2.5-1.1,2.5-2.5V4.1C64.9,2.8,63.8,1.7,62.4,1.7z M60.4,12.6H43.2c-0.4,0-0.8-0.3-0.8-0.8c0-0.4,0.3-0.8,0.8-0.8h17.2    c0.4,0,0.8,0.3,0.8,0.8C61.1,12.2,60.8,12.6,60.4,12.6z M60.4,7.7H43.2c-0.4,0-0.8-0.3-0.8-0.8c0-0.4,0.3-0.8,0.8-0.8h17.2    c0.4,0,0.8,0.3,0.8,0.8C61.1,7.4,60.8,7.7,60.4,7.7z"/></g><g><path d="M21.6,8.8H3.2C2,8.8,1,9.8,1,11v8.8C1,21,2,22,3.2,22h10.9l4.3,4.3c0.5,0.5,1.3,0.1,1.3-0.5V22h1.9c1.2,0,2.2-1,2.2-2.2    V11C23.8,9.8,22.8,8.8,21.6,8.8z M20.3,18.2H4.5c-0.4,0-0.8-0.3-0.8-0.8c0-0.4,0.3-0.8,0.8-0.8h15.7c0.4,0,0.8,0.3,0.8,0.8    C21,17.9,20.7,18.2,20.3,18.2z M20.3,13.8H4.5c-0.4,0-0.8-0.3-0.8-0.8c0-0.4,0.3-0.8,0.8-0.8h15.7c0.4,0,0.8,0.3,0.8,0.8    C21,13.4,20.7,13.8,20.3,13.8z"/></g></g><text x="0" y="86" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text></svg>
+      </i>
       <h4>Community</h4>
       <p>Join hundreds of reputable vendors and individuals worldwide in an automotive enthusiast-centric marketplace.</p>
       </div>
     <div class="col-2">
-      <img src="buyandsell.png" id="icon" alt="Buy & Sell"></img>
+      <i class="icon">
+        <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#525961;enable-background:accumulate;" d="m 17.140599,958.36217 c -0.7805,-10e-4 -1.5388,0.50024 -1.8437,1.21875 l -7.8125995,18 c -0.2617,0.45338 -0.2812,0.76227 -0.2812,1.25 l 0,11.09375 c 0,3.76514 2.6288,6.80879 6.1249995,7.90625 l 0,46.53128 c 0,1.0472 0.9528,2 2.000001,2 l 69.3438,0 c 1.047,0 2,-0.9528 2,-2 l 0,-46.53128 c 3.496201,-1.09746 6.125,-4.14111 6.125,-7.90625 l 0,-11.125 c 0,-0.46679 -0.130499,-0.84795 -0.3126,-1.28125 l -7.781199,-17.9375 c -0.3049,-0.71854 -1.063001,-1.2198 -1.843802,-1.21875 l -65.7187,0 z m 1.3125,4 63.0938,0 6.218701,14.28125 -75.531301,0 6.2188,-14.28125 z m -7.25,18.28125 9.5938,0 0,9.28125 c 0,2.37902 -2.1121,4.4375 -4.8126,4.4375 -2.7128,0 -4.781199,-2.05471 -4.781199,-4.4375 l 0,-9.28125 z m 13.5938,0 9.5937,0 0,9.28125 c 0,2.38279 -2.0994,4.4375 -4.8125,4.4375 -2.7002,0 -4.7812,-2.05475 -4.7812,-4.4375 l 0,-9.28125 z m 13.5937,0 9.625,0 0,9.28125 c 0,2.38279 -2.099499,4.4375 -4.8125,4.4375 -2.700299,0 -4.8125,-2.05848 -4.8125,-4.4375 l 0,-9.28125 z m 13.5937,0 9.625,0 0,9.28125 c 0,2.38279 -2.0997,4.4375 -4.812399,4.4375 -2.7131,0 -4.812601,-2.05471 -4.812601,-4.4375 l 0,-9.28125 z m 13.625,0 9.593801,0 0,9.28125 c 0,2.37902 -2.081101,4.4375 -4.781201,4.4375 -2.7131,0 -4.8126,-2.05475 -4.8126,-4.4375 l 0,-9.28125 z m 13.593801,0 9.5938,0 0,9.28125 c 0,2.38279 -2.0683,4.4375 -4.781299,4.4375 -2.700301,0 -4.812501,-2.05848 -4.812501,-4.4375 l 0,-9.28125 z m -56.468801,20.09378 29.312601,0 c 1.046999,10e-5 1.999799,0.9217 2,1.9687 l 0,35.3125 c -2.01e-4,1.047 -0.953001,1.9999 -2,2 l -29.312601,0 c -1.046999,-10e-5 -1.9998,-0.953 -2,-2 l 0,-35.3125 c 2e-4,-1.047 0.953001,-1.9686 2,-1.9687 z m 38.3438,15.875 14.250001,0 0,25.75 -14.250001,0 0,-25.75 z" fill="#525961" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#525961;enable-background:accumulate;" d="m 63.953099,1025.0809 c -1.0473,0.016 -1.985299,0.984 -1.9688,2.0313 l 0,1.875 c 0,1.0487 0.951301,2.0045 2,2.0045 1.0487,0 2.002301,-0.9558 2,-2.0045 l 0,-1.875 c 0.017,-1.0681 -0.9632,-2.0481 -2.0312,-2.0313 z" fill="#525961" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></g><text x="0" y="120" fill="#525961" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text></svg>
+      </i>
       <h4>Buy & Sell</h4>
       <p>Complete your transaction digitally in under 30 seconds utilizing a secure platform; no need to worry about handling cash deals again.</p>
     </div>
     <div class="col-3">
-      <img src="seamless.png" id="icon" alt="Seamless"></img>
+      <i class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><g><path d="M33.194,90.645c5.168-2.584,6.726-5.268,6.034-10.463c2.994,0.346,5.683-0.301,7.815-2.534   c2.143-2.244,2.753-4.925,2.171-7.783c1.49-0.201,2.985-0.192,4.341-0.622c6.019-1.91,7.835-9.404,3.369-13.872   c-2.813-2.815-5.743-5.514-8.627-8.257c-7.648-7.274-15.299-14.544-22.949-21.816c-1.005-0.955-2.038-1.882-3.008-2.871   c-2.315-2.36-2.355-6.015-0.126-8.354c2.22-2.329,5.906-2.504,8.347-0.258c3.653,3.361,7.227,6.808,10.832,10.221   c5.261,4.981,10.517,9.97,15.783,14.945c1.44,1.36,3.036,2.493,4.885,3.255c2.519,1.038,4.854,0.741,6.851-1.105   c1.005-0.929,1.904-2.024,2.643-3.177c1.736-2.707,3.272-5.544,5.029-8.237c2.372-3.637,7.182-4.322,10.574-1.621   c2.794,2.225,3.452,6.188,1.511,9.445c-2.746,4.608-5.532,9.192-8.303,13.786c-1.362,2.259-2.711,4.526-4.106,6.765   c-0.377,0.604-0.375,1.083-0.058,1.721c1.292,2.6,2.508,5.237,3.776,7.849c4.186,8.619,0.996,18.186-7.568,22.415   c-5.808,2.867-11.65,5.668-17.525,8.395c-7.634,3.543-16.63,0.736-20.951-6.443C33.665,91.581,33.439,91.106,33.194,90.645z"/><path d="M24.126,49.416c0.928,0.017,2.299,0.499,3.422,1.554c5.866,5.51,11.742,11.011,17.57,16.561   c2.381,2.267,2.418,5.994,0.209,8.345c-2.284,2.43-5.965,2.608-8.434,0.305c-5.133-4.788-10.22-9.626-15.327-14.443   c-0.715-0.675-1.455-1.324-2.154-2.015c-1.806-1.787-2.331-4.37-1.382-6.677C18.93,50.859,21.106,49.42,24.126,49.416z"/><path d="M56.891,62.057c-0.059,1.668-1.159,3.578-3.444,4.618c-2.212,1.006-4.444,0.808-6.283-0.819   c-2.744-2.428-5.356-5.007-8.02-7.525c-3.185-3.009-6.373-6.015-9.546-9.036c-1.646-1.567-2.332-3.489-1.819-5.723   c1.065-4.637,6.47-6.244,10.01-2.981c2.202,2.03,4.353,4.116,6.528,6.176c3.312,3.135,6.608,6.287,9.944,9.397   C55.75,57.552,56.92,59.065,56.891,62.057z"/><path d="M16.406,62.396c1.608-0.018,3.019,0.759,4.262,1.94c3.95,3.756,7.906,7.506,11.861,11.256   c0.81,0.769,1.642,1.515,2.439,2.298c2.536,2.494,2.655,6.223,0.29,8.638c-2.333,2.383-6.018,2.397-8.551,0.008   c-4.647-4.384-9.265-8.8-13.93-13.165c-1.804-1.688-2.948-3.58-2.435-6.152C10.921,64.31,13.294,62.379,16.406,62.396z"/><path d="M70.883,20.925c-1.213-0.111-1.965-0.528-2.39-1.416c-0.454-0.948-0.281-1.836,0.385-2.615   c0.257-0.3,0.598-0.536,0.92-0.773c2.124-1.56,4.243-3.125,6.384-4.661c1.297-0.931,2.74-0.763,3.557,0.36   c0.843,1.16,0.597,2.539-0.693,3.502c-2.219,1.656-4.454,3.291-6.709,4.897C71.847,20.568,71.241,20.756,70.883,20.925z"/><path d="M50.945,13.516c-0.001,1.222-0.604,2.136-1.462,2.483c-0.902,0.365-2.116,0.187-2.704-0.593   c-1.88-2.494-3.736-5.009-5.508-7.58c-0.751-1.09-0.349-2.488,0.693-3.191c1.03-0.695,2.449-0.52,3.239,0.529   c1.798,2.388,3.547,4.814,5.283,7.248C50.757,12.795,50.857,13.298,50.945,13.516z"/><path d="M64.495,15.312c-1.786-0.007-2.826-1.621-2.151-3.417c0.376-1,0.856-1.961,1.288-2.94c0.738-1.671,1.445-3.356,2.221-5.009   c0.599-1.276,1.777-1.789,2.971-1.391c1.317,0.439,2.038,1.757,1.477,3.123c-1.168,2.843-2.449,5.641-3.724,8.439   C66.19,14.969,65.414,15.305,64.495,15.312z"/><path d="M58.774,10.721c0.037,1.727-0.783,2.773-2.139,2.902c-1.327,0.126-2.458-0.81-2.631-2.289   c-0.325-2.793-0.621-5.59-0.864-8.391c-0.051-0.59,0.043-1.277,0.314-1.79c0.477-0.905,1.363-1.291,2.384-1.11   c1.063,0.189,1.804,0.829,1.952,1.931c0.273,2.034,0.479,4.077,0.708,6.117C58.602,9.023,58.694,9.956,58.774,10.721z"/></g><text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text></svg>
+      </i>
         <h4>Seamless</h4>
       <p>Effortlessly search thousands of wheels and filter by manufacturer, bolt pattern, diameter, and more.</p>
     </div>
@@ -169,52 +144,47 @@
 
 
 <footer class="footer">
-	<ul class="footer-left">
-        <li><a class="footer_link" href="#">Contact us</a></li>
-        <li><a class="footer_link" href="#">How it works</a></li>
-        <li><a class="footer_link" href="#">Privacy policy</a></li>
-        <li><a class="footer_link" href="#">Terms of use</a></li>
-  </ul>
-	<div class="social">
-      <a class="footer-social-link" href="https://www.twitter.com/WheelPrice" target="_blank" rel="noreferrer">
-          <svg class="footer_social-icon footer_twitter-icon" viewBox="48 2 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path d="M68.4207941,2.33276729 C67.5875898,2.8529685 66.6669159,3.23129666 65.6828825,3.43372529 C64.8990201,2.55134408 63.778736,2 62.5384615,2 C60.1610819,2 58.2317037,4.03466726 58.2317037,6.54397488 C58.2317037,6.90038768 58.2687101,7.24584281 58.3427229,7.57861011 C54.7620751,7.38886931 51.5879369,5.58200634 49.4617521,2.829323 C49.0905668,3.50293166 48.8786212,4.28438691 48.8786212,5.11659351 C48.8786212,6.69219186 49.6389341,8.08323988 50.7956639,8.89814488 C50.0902998,8.87622953 49.4247457,8.66976387 48.8427362,8.33180609 L48.8427362,8.38717119 C48.8427362,10.5896639 50.3280378,12.427093 52.3005901,12.8429079 C51.9394975,12.9496011 51.5582196,13.003236 51.165167,13.003236 C50.8876191,13.003236 50.6167997,12.9755535 50.3543908,12.9224953 C50.9027581,14.7270514 52.4929111,16.0413957 54.3785545,16.0765756 C52.9044669,17.2957611 51.0457373,18.022428 49.0277681,18.022428 C48.6801324,18.022428 48.3364216,18.0016661 48,17.9601423 C49.9063893,19.2473807 52.1721891,20 54.6045177,20 C62.530051,20 66.8626011,13.0770562 66.8626011,7.07167345 C66.8626011,6.87385858 66.8592369,6.67662042 66.8519478,6.48284259 C67.6935626,5.84210695 68.424719,5.04219666 69,4.13097946 C68.228473,4.49200602 67.3975115,4.7365352 66.5261795,4.84611195 C67.4160147,4.28438691 68.0989507,3.39393163 68.4207941,2.33276729" id="Twitter" stroke="none" fill-rule="evenodd"></path>
-          </svg>
-      </a>
-      <a class="footer-social-link" href="https://www.instagram.com/WheelPrice" target="_blank" rel="noreferrer">
-        <svg class="footer__social-media-icon footer__instagram-icon" viewBox="397 291 22 21" xmlns="http://www.w3.org/2000/svg">
-            <path d="M411.714 301.43c0 1.887-1.54 3.427-3.428 3.427-1.89 0-3.43-1.54-3.43-3.428 0-1.89 1.54-3.43 3.43-3.43 1.888 0 3.428 1.54 3.428 3.43zm1.85 0c0-2.92-2.36-5.278-5.278-5.278-2.92 0-5.277 2.357-5.277 5.277 0 2.918 2.356 5.275 5.276 5.275s5.277-2.357 5.277-5.276zm1.445-5.493c0-.683-.55-1.232-1.233-1.232s-1.232.55-1.232 1.232c0 .684.55 1.233 1.232 1.233.683 0 1.232-.55 1.232-1.233zm-6.724-2.946c1.5 0 4.714-.12 6.067.416.468.188.817.415 1.178.777.363.362.59.71.778 1.18.536 1.35.415 4.566.415 6.066s.12 4.713-.415 6.066c-.187.468-.415.816-.777 1.178-.36.362-.71.59-1.177.777-1.353.537-4.567.416-6.067.416s-4.715.12-6.067-.415c-.47-.187-.818-.414-1.18-.776-.36-.362-.59-.71-.777-1.178-.535-1.353-.415-4.567-.415-6.067s-.12-4.716.415-6.068c.188-.47.416-.817.777-1.18.362-.36.71-.588 1.18-.776 1.35-.535 4.566-.415 6.066-.415zm10.285 8.44c0-1.42.015-2.827-.066-4.247-.08-1.647-.455-3.107-1.66-4.312-1.206-1.205-2.665-1.58-4.313-1.66-1.418-.08-2.825-.067-4.244-.067-1.42 0-2.826-.014-4.246.067-1.647.08-3.107.455-4.312 1.66-1.206 1.206-1.58 2.666-1.66 4.313-.08 1.42-.068 2.826-.068 4.246 0 1.418-.013 2.824.067 4.244.08 1.647.455 3.107 1.66 4.313 1.206 1.205 2.666 1.58 4.313 1.66 1.42.08 2.826.067 4.246.067 1.42 0 2.826.014 4.245-.067 1.65-.08 3.108-.455 4.314-1.66 1.205-1.206 1.58-2.666 1.66-4.313.08-1.42.067-2.826.067-4.245z" id="Instagram" stroke="none" fill-rule="evenodd"></path>
-          </svg>
-      </a>
-      <a class="footer-social-link" href="https://www.facebook.com/WheelPrice-313367585801105/" target="_blank" rel="noreferrer">
-          <svg class="footer__social-media-icon footer__facebook-icon" viewBox="0 0 12 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path d="M7.78896556,22 L7.78896556,11.9648254 L11.3270218,11.9648254 L11.8567155,8.05386965 L7.78896556,8.05386965 L7.78896556,5.55689722 C7.78896556,4.42458426 8.11918279,3.65297638 9.8247272,3.65297638 L12,3.65200544 L12,0.15408855 C11.623687,0.106512375 10.3324948,0 8.83030221,0 C5.69405446,0 3.54703063,1.82255587 3.54703063,5.16968541 L3.54703063,8.05386965 L0,8.05386965 L0,11.9648254 L3.54703063,11.9648254 L3.54703063,22 L7.78896556,22 Z" id="Facebook" stroke="none" fill-rule="evenodd"></path>
-          </svg>
-      </a>
-      <a class="footer-social-link" href="https://www.instagram.com/WheelPrice" target="_blank" rel="noreferrer">
-        <svg class="footer__social-media-icon footer__instagram-icon" viewBox="397 291 22 21" xmlns="http://www.w3.org/2000/svg">
-            <path d="M411.714 301.43c0 1.887-1.54 3.427-3.428 3.427-1.89 0-3.43-1.54-3.43-3.428 0-1.89 1.54-3.43 3.43-3.43 1.888 0 3.428 1.54 3.428 3.43zm1.85 0c0-2.92-2.36-5.278-5.278-5.278-2.92 0-5.277 2.357-5.277 5.277 0 2.918 2.356 5.275 5.276 5.275s5.277-2.357 5.277-5.276zm1.445-5.493c0-.683-.55-1.232-1.233-1.232s-1.232.55-1.232 1.232c0 .684.55 1.233 1.232 1.233.683 0 1.232-.55 1.232-1.233zm-6.724-2.946c1.5 0 4.714-.12 6.067.416.468.188.817.415 1.178.777.363.362.59.71.778 1.18.536 1.35.415 4.566.415 6.066s.12 4.713-.415 6.066c-.187.468-.415.816-.777 1.178-.36.362-.71.59-1.177.777-1.353.537-4.567.416-6.067.416s-4.715.12-6.067-.415c-.47-.187-.818-.414-1.18-.776-.36-.362-.59-.71-.777-1.178-.535-1.353-.415-4.567-.415-6.067s-.12-4.716.415-6.068c.188-.47.416-.817.777-1.18.362-.36.71-.588 1.18-.776 1.35-.535 4.566-.415 6.066-.415zm10.285 8.44c0-1.42.015-2.827-.066-4.247-.08-1.647-.455-3.107-1.66-4.312-1.206-1.205-2.665-1.58-4.313-1.66-1.418-.08-2.825-.067-4.244-.067-1.42 0-2.826-.014-4.246.067-1.647.08-3.107.455-4.312 1.66-1.206 1.206-1.58 2.666-1.66 4.313-.08 1.42-.068 2.826-.068 4.246 0 1.418-.013 2.824.067 4.244.08 1.647.455 3.107 1.66 4.313 1.206 1.205 2.666 1.58 4.313 1.66 1.42.08 2.826.067 4.246.067 1.42 0 2.826.014 4.245-.067 1.65-.08 3.108-.455 4.314-1.66 1.205-1.206 1.58-2.666 1.66-4.313.08-1.42.067-2.826.067-4.245z" id="Instagram" stroke="none" fill-rule="evenodd"></path>
-          </svg>
-      </a>
-      <a class="footer-social-link" href="https://www.facebook.com/WheelPrice-313367585801105/" target="_blank" rel="noreferrer">
-          <svg class="footer__social-media-icon footer__facebook-icon" viewBox="0 0 12 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path d="M7.78896556,22 L7.78896556,11.9648254 L11.3270218,11.9648254 L11.8567155,8.05386965 L7.78896556,8.05386965 L7.78896556,5.55689722 C7.78896556,4.42458426 8.11918279,3.65297638 9.8247272,3.65297638 L12,3.65200544 L12,0.15408855 C11.623687,0.106512375 10.3324948,0 8.83030221,0 C5.69405446,0 3.54703063,1.82255587 3.54703063,5.16968541 L3.54703063,8.05386965 L0,8.05386965 L0,11.9648254 L3.54703063,11.9648254 L3.54703063,22 L7.78896556,22 Z" id="Facebook" stroke="none" fill-rule="evenodd"></path>
-          </svg>
-      </a>
-    	</div>
-      <hr class="footer__separator">
-</nav>
-<div class="copyright">
-  <p>
-    <small>&copy; 2018 WheelPrice</small>
-  </p>
-</div>
+  <div class="footer_content">
+
+    <div class="footer_links">
+        <ul class="footer_links_list">
+            <li class="footer_links_list_item"><a class="footer_link" href="https://www.wheelprice.com/user_feedbacks/new">Contact us</a></li>
+            <li class="footer_links_list_item"><a class="footer_link" href="https://www.wheelprice.com/infos/how_to_use">How it works</a></li>
+            <li class="footer_links_list_item"><a class="footer_link" href="https://www.wheelprice.com/infos/privacy">Privacy policy</a></li>
+            <li class="footer_links_list_item"><a class="footer_link" href="https://www.wheelprice.com/infos/terms">Terms of use</a></li>
+        </ul>
+
+
+        <div class="footer_socialmedia">
+            <a class="footer_social_link" href="https://www.twitter.com/WheelPrice" target="_blank" rel="noreferrer">
+                <svg class="footer__social-media-icon footer-twitter-icon" viewBox="48 2 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M68.4207941,2.33276729 C67.5875898,2.8529685 66.6669159,3.23129666 65.6828825,3.43372529 C64.8990201,2.55134408 63.778736,2 62.5384615,2 C60.1610819,2 58.2317037,4.03466726 58.2317037,6.54397488 C58.2317037,6.90038768 58.2687101,7.24584281 58.3427229,7.57861011 C54.7620751,7.38886931 51.5879369,5.58200634 49.4617521,2.829323 C49.0905668,3.50293166 48.8786212,4.28438691 48.8786212,5.11659351 C48.8786212,6.69219186 49.6389341,8.08323988 50.7956639,8.89814488 C50.0902998,8.87622953 49.4247457,8.66976387 48.8427362,8.33180609 L48.8427362,8.38717119 C48.8427362,10.5896639 50.3280378,12.427093 52.3005901,12.8429079 C51.9394975,12.9496011 51.5582196,13.003236 51.165167,13.003236 C50.8876191,13.003236 50.6167997,12.9755535 50.3543908,12.9224953 C50.9027581,14.7270514 52.4929111,16.0413957 54.3785545,16.0765756 C52.9044669,17.2957611 51.0457373,18.022428 49.0277681,18.022428 C48.6801324,18.022428 48.3364216,18.0016661 48,17.9601423 C49.9063893,19.2473807 52.1721891,20 54.6045177,20 C62.530051,20 66.8626011,13.0770562 66.8626011,7.07167345 C66.8626011,6.87385858 66.8592369,6.67662042 66.8519478,6.48284259 C67.6935626,5.84210695 68.424719,5.04219666 69,4.13097946 C68.228473,4.49200602 67.3975115,4.7365352 66.5261795,4.84611195 C67.4160147,4.28438691 68.0989507,3.39393163 68.4207941,2.33276729" id="Twitter" stroke="none" fill-rule="evenodd"></path>
+                </svg>
+            </a>
+            <a class="footer_social_link" href="https://www.instagram.com/WheelPrice" target="_blank" rel="noreferrer">
+                <svg class="footer__social-media-icon footer-instagram-icon" viewBox="397 291 22 21" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M411.714 301.43c0 1.887-1.54 3.427-3.428 3.427-1.89 0-3.43-1.54-3.43-3.428 0-1.89 1.54-3.43 3.43-3.43 1.888 0 3.428 1.54 3.428 3.43zm1.85 0c0-2.92-2.36-5.278-5.278-5.278-2.92 0-5.277 2.357-5.277 5.277 0 2.918 2.356 5.275 5.276 5.275s5.277-2.357 5.277-5.276zm1.445-5.493c0-.683-.55-1.232-1.233-1.232s-1.232.55-1.232 1.232c0 .684.55 1.233 1.232 1.233.683 0 1.232-.55 1.232-1.233zm-6.724-2.946c1.5 0 4.714-.12 6.067.416.468.188.817.415 1.178.777.363.362.59.71.778 1.18.536 1.35.415 4.566.415 6.066s.12 4.713-.415 6.066c-.187.468-.415.816-.777 1.178-.36.362-.71.59-1.177.777-1.353.537-4.567.416-6.067.416s-4.715.12-6.067-.415c-.47-.187-.818-.414-1.18-.776-.36-.362-.59-.71-.777-1.178-.535-1.353-.415-4.567-.415-6.067s-.12-4.716.415-6.068c.188-.47.416-.817.777-1.18.362-.36.71-.588 1.18-.776 1.35-.535 4.566-.415 6.066-.415zm10.285 8.44c0-1.42.015-2.827-.066-4.247-.08-1.647-.455-3.107-1.66-4.312-1.206-1.205-2.665-1.58-4.313-1.66-1.418-.08-2.825-.067-4.244-.067-1.42 0-2.826-.014-4.246.067-1.647.08-3.107.455-4.312 1.66-1.206 1.206-1.58 2.666-1.66 4.313-.08 1.42-.068 2.826-.068 4.246 0 1.418-.013 2.824.067 4.244.08 1.647.455 3.107 1.66 4.313 1.206 1.205 2.666 1.58 4.313 1.66 1.42.08 2.826.067 4.246.067 1.42 0 2.826.014 4.245-.067 1.65-.08 3.108-.455 4.314-1.66 1.205-1.206 1.58-2.666 1.66-4.313.08-1.42.067-2.826.067-4.245z" id="Instagram" stroke="none" fill-rule="evenodd"></path>
+                </svg>
+            </a>
+            <a class="footer_social_link" href="https://www.facebook.com/WheelPrice-313367585801105/" target="_blank" rel="noreferrer">
+                <svg class="footer__social-media-icon footer-facebook-icon" viewBox="0 0 12 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M7.78896556,22 L7.78896556,11.9648254 L11.3270218,11.9648254 L11.8567155,8.05386965 L7.78896556,8.05386965 L7.78896556,5.55689722 C7.78896556,4.42458426 8.11918279,3.65297638 9.8247272,3.65297638 L12,3.65200544 L12,0.15408855 C11.623687,0.106512375 10.3324948,0 8.83030221,0 C5.69405446,0 3.54703063,1.82255587 3.54703063,5.16968541 L3.54703063,8.05386965 L0,8.05386965 L0,11.9648254 L3.54703063,11.9648254 L3.54703063,22 L7.78896556,22 Z" id="Facebook" stroke="none" fill-rule="evenodd"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <hr class="footer_separator">
+    <div class="footer_copyright">
+      <p>© WheelPrice 2018. All rights reserved.</p>
+    </div>
+  </div>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="YOUR_JS_FILE.js"></script>
 
 </body>
 </html>
